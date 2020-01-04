@@ -28,7 +28,7 @@ services:
       args:
         - NGINX_VER=1.17
     ports:
-      - "80:80"
+      - "8090:80"
       - "8080:8080"
       - "443:443"
     depends_on:
@@ -52,7 +52,7 @@ services:
       args:
         - MYSQL_VER=8.0
     ports:
-      - "3306:3306"
+      - "33080:3306"
     volumes:
       - ../../data/mysql:/var/lib/mysql:rw
       - ../../logs/mysql:/var/lib/mysql-logs:rw

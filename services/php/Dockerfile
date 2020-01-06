@@ -82,4 +82,4 @@ WORKDIR /data
 # 写权限
 RUN usermod -u 1000 www-data
 
-EXPOSE 9000
+EXPOSE 9000/tcp 9501/tcp 9502/tcp
